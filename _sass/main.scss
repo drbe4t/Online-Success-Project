@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$uvuGreen: #275D38;
+$uvuGreen-inverted: rgb(65, 228, 117);
+$uvuGray: #8E8C89;
+$uvuGTransparent: rgba(142, 140, 137, 0.541);
+// Add pink and its invert
+
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $uvuGreen;
+
+
+// 4. Import the rest of Bulma
+
+
+@import "../node_modules/bulma/bulma";
+
+// Hero section
+/*
+.hero::after {
+    content: "";  // :before and :after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg,#eaee44,#33d0ff);
+    background-color: #333;
+    opacity: .7;
+    z-index: 1;
+}
+
+ * {
+    z-index: 100;
+}
+*/
+
+.content  h2{
+    color: white;
+}
+ .readable,{
+    color:white;
+}
+.hero {
+    background-image: linear-gradient(rgba(142, 140, 137, 0.514),rgba(142, 140, 137, 0.514)),
+     url(" ../media/20141028_Christmas Video_0463.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.heading {
+    text-shadow: 2px 1px 1em  black;
+}
+
+.succesful-block {
+   background-image: linear-gradient(
+$uvuGreen, rgb(51, 125, 74)
+   );
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.intro-box {
+    padding: 2em;
+    margin-top: -25px;
+}
+
+.footer {
+    background-color: $uvuGray;
+}
+
+.policies {
+    background-image:linear-gradient(
+        rgba(51, 125, 74, 0.989), rgba(51, 125, 74, 0.222)
+           ),
+            url("../media/20140729_Campus Architecture__0176 (1).jpg");
+           background-position: center center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           min-height: 250px;
+}
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.description {
+    padding: 1em;
+}
+.policy {
+    padding-top: 40px;
+}
+
+.ct-policies {
+    padding: .90em;
+}
+
+.text{
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer p{
+    color: white;
+}
+
+.footerimg{
+    width: 250px;
+}
